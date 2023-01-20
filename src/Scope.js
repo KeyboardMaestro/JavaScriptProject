@@ -12,3 +12,12 @@ function bar(){
 
 foo()
 bar()
+
+var x1 = "Global";
+function foo1() {
+    console.log(x1);
+    var x1 = "local";
+}
+
+foo1();
+console.log(x1);
