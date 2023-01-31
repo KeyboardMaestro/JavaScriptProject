@@ -1,13 +1,13 @@
 function solution(n) {
     let sum = 1;
+    let i = 1;
     while (true){
-        let i = 1;
-        if (sum >= n)
+        sum = sum * i;
+        if (sum*i >= n)
             break;
         else{
             i++
-            sum *= sum * i
         }
     }
-    return i - 1;
-}
+    return i;
+} // Resource : https://school.programmers.co.kr/learn/courses/30/lessons/120848
